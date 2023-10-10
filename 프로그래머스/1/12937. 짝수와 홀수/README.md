@@ -1,10 +1,10 @@
 # [level 1] 짝수와 홀수 - 12937 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12937) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12937?language=python3) 
 
 ### 성능 요약
 
-메모리: 69.2 MB, 시간: 1.63 ms
+메모리: 10.1 MB, 시간: 0.00 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2023년 10월 3일 0:1:52
+2023년 10월 3일 0:2:2
 
 ### 문제 설명
 
