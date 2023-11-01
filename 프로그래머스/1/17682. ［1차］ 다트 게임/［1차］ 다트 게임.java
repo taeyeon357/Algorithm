@@ -3,7 +3,7 @@ import java.util.*;
 class Solution {
     public int solution(String dartResult) {
         int answer = 0;
-        String[] numArr = dartResult.split("[A-Z]|'#'|'*'");
+        String[] numArr = dartResult.split("[A-Z]");
         int[] result = new int[numArr.length];
         
         for(int i=0; i<numArr.length; i++) {
