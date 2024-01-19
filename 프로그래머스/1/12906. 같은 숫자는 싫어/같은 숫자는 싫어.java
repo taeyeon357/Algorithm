@@ -4,20 +4,19 @@ public class Solution {
     public int[] solution(int []arr) {
         int[] answer = {};
         
-        List<Integer> result = new ArrayList<>();
+        Stack<Integer> stk = new Stack<>();
         
-        result.add(arr[0]);
-        int idx = 0;
-        for(int i=0; i<arr.length; i++) {
-        	if(result.get(idx).equals(arr[i])) {
-        		continue;
-        	}else {
-        		result.add(arr[i]);
-        		idx += 1;
-        	}
+        stk.add(arr[0]);
+        for(int i=1; i<arr.length; i++){
+            if(stk.peek() != arr[i]){
+                stk.add(arr[i]);
+            }
         }
-        answer = result.stream().mapToInt(a->a).toArray();
-
+        answer = new int[stk.size()];
+        for(int i=stk.size()-1; i>-1; i--){
+            answer[i] = stk.pop();
+        }
+        
         return answer;
     }
 }
