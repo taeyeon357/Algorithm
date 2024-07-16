@@ -1,16 +1,12 @@
 import java.util.*;
 
 class Solution {
-    public int[] solution(int[] arr) {        
-        int p = 0;
-        while(true){
-            if(Math.pow(2,p) >= arr.length) break;
-            p++;
-        }
-        int size = (int)Math.pow(2,p);
-        int[] ans = new int[size];
-        ans = Arrays.copyOfRange(arr, 0, size);
-
-        return ans;
+    public int[] solution(int[] arr) { 
+        int size = 1;
+        while(size < arr.length)
+            size *= 2;
+        
+        return Arrays.copyOf(arr, size);
     }
 }
+    
