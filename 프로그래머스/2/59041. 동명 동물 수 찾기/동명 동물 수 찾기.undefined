@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT name, count(*) as count
+FROM animal_ins
+WHERE name != ''
+GROUP BY name
+HAVING count(*) > 1 
+ORDER BY name
