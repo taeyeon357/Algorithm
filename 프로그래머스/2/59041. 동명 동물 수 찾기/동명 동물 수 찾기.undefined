@@ -1,7 +1,7 @@
 -- 코드를 입력하세요
-SELECT name, count(*) as count
+SELECT name, count(*) AS COUNT
 FROM animal_ins
-WHERE name != ''
+WHERE name IS NOT NULL
 GROUP BY name
-HAVING count(*) > 1 
+HAVING COUNT > 1
 ORDER BY name
