@@ -1,17 +1,22 @@
-import java.util.Scanner;
-import java.io.FileInputStream;
 import java.util.*;
+import java.io.*;
+
 
 class Solution
 {
-	public static void main(String args[]) throws Exception
+	public static void main(String args[]) throws IOException
 	{
-		
-		Scanner sc = new Scanner(System.in);
-		String data = sc.next();
-		
-		System.out.println(data.toUpperCase());
-
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+		for(char c : br.readLine().toCharArray()){
+        	if(Character.isAlphabetic(c)){
+            	sb.append(Character.toUpperCase(c));
+            }else{
+            	sb.append(c);
+            }
+        }
+	
+        System.out.println(sb);
 		
 	}
 }
